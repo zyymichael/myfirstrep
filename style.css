@@ -1,0 +1,36 @@
+div {
+    color: rgb(255, 132, 0)
+}
+
+#div1 {
+    color: rgb(0, 157, 255)
+}
+
+#div2 {
+    color: blueviolet
+}
+
+#ul {
+    color: cornflowerblue;
+}
+
+#ol {
+    color: darkgray
+}
+
+.large-font {
+    font-size: 3rem
+}
+
+.deep-background {
+    background-color: black;
+
+    font-size: size 4rem;
+}
+
+.version {
+    background-color: darkseagreen;
+    color: bisque;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
