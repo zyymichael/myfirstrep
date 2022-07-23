@@ -31,9 +31,9 @@
     color: var(--font-color);
 }
 
-.showcase.active{
-    right:var(--menu-width);
-    width:calc(100% - var(--menu-width));
+.showcase.active {
+    right: var(--menu-width);
+    width: calc(100% - var(--menu-width));
 }
 
 .showcase header {
@@ -55,11 +55,11 @@
 }
 
 .showcase,
-.toggle{
-    transition:0.5s;
+.toggle {
+    transition: 0.5s;
 }
 
-.toggle.active{
+.toggle.active {
     background-image: url('src/close.svg');
 }
 
@@ -82,13 +82,21 @@
     height: 100%;
     background-color: var(--overlay-color);
     mix-blend-mode: overlay;
-    z-index:-1;
+    z-index: -1;
 }
 
+/* .text{
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+} */
+
 .text h1 {
+    /* position: absolute; */
     font-size: 5rem;
     font-weight: 800;
     line-height: 1em;
+    /* z-index: -2; */
 }
 
 .text h2 {
@@ -114,67 +122,81 @@
     text-decoration: none;
     letter-spacing: 2px;
     cursor: pointer;
-    transition:0.2s;
+    transition: 0.2s;
 }
 
-.text a:hover{
-    letter-spacing:6px;
+.text a:hover {
+    letter-spacing: 6px;
 }
 
-.social{
-    display:flex;
+.social {
+    display: flex;
 }
 
-.social li{
-    list-style:none;
+.social li {
+    list-style: none;
 }
 
-.social li a{
-    display:inline-block;
-    filter:invert(1);
+.social li a {
+    display: inline-block;
+    filter: invert(1);
 }
 
-.social li a:not(last-child){
+.social li a:not(last-child) {
     margin-right: 20px;
     transition: 0.5s;
 }
 
-.social li a:hover{
+.social li a:hover {
     transform: translateY(-10px);
 }
 
-.menu{
-    z-index:1;
-    position:absolute;
-    top:0;
-    right:0;
-    width:var(--menu-width);
-    height:100%;
-    display:flex;
+.menu {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--menu-width);
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.menu ul{
+.menu ul {
     list-style: none;
 }
 
-.menu li a{
-    color:var(--overlay-color);
+.menu li a {
+    color: var(--overlay-color);
     text-decoration: none;
     font-size: 24px;
 }
 
-@media(max-width:798px){
-    .showcase{
-        padding:40px;
+@media screen and (max-width:798px) {
+    .showcase {
+        padding: 40px;
     }
 
-    .text h1{
-        font-size:3rem;
+    .text h1 {
+        font-size: 3rem;
     }
 
-    .text h2{
-        font-size:2rem;
+    .text h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .showcase {
+        padding: 20px;
+    }
+
+    .text h1 {
+        font-size: 2rem;
+    }
+
+    .text h2 {
+        font-size: 1rem;
     }
 }
